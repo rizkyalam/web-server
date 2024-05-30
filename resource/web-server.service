@@ -1,0 +1,15 @@
+[Unit]
+Description=Simple web server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/web_server --run --config /etc/web-server/web-server.conf
+ExecReload=/bin/kill -HUP $MAINPID
+User=root
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=web-server
+
+[Install]
+WantedBy=multi-user.target

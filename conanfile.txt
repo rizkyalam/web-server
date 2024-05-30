@@ -1,0 +1,9 @@
+[requires]
+boost/1.70.0
+gtest/1.11.0
+libconfig/1.7.3
+spdlog/1.9.0
+yaml-cpp/0.8.0
+
+[generators]
+pkg_config
