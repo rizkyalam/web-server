@@ -49,7 +49,7 @@ $ docker container rm web-server
 $ systemctl start web-server
 
 # check daemon status
-$ systemctl start web-server
+$ systemctl status web-server
 
 # stop daemon
 $ systemctl stop web-server
